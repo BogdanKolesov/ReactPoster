@@ -1,0 +1,45 @@
+.btn-submit{
+    background-color: #4056a1;
+    border-radius: 3px;
+    height: 45px;
+    min-width: 90px;
+    color: #fff;
+}
+.add-panel{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-post-label{
+    outline: none;
+    width: 50%;
+    height: 60px;
+    border-color: #4056a1;
+    padding: 4px;
+}
+
+.new-post-label:focus{
+    border-color: #479761;
+}
+
+@media screen and (max-width: 1126px) {
+    .new-post-label{
+        width: 100%; 
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    .add-panel{
+        flex-direction: column;
+    }
+
+    .btn-submit{
+        margin-top: 5px;
+        min-width: 70%;
+    }
+}

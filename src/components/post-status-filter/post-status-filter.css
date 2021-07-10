@@ -1,0 +1,31 @@
+.btn--active{
+    background-color: #f76c6c;
+    color: #fff;
+}
+
+.btn--passive{
+    background-color: #2e9cca;
+    color: #fff;
+}
+
+.btn{
+    height: 30px;
+    min-width: 65px;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.2s;
+    border-radius: 2px;
+    box-shadow: 4px 5px 27px -4px rgba(34, 60, 80, 0.32);
+    
+}
+
+.btn:hover{
+    background-color: #479761;
+}
+
+@media screen and (max-width: 1126px) {
+    .btn-group{
+        margin-top: 5px;
+    }
+}

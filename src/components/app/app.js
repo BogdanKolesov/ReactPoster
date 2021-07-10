@@ -8,17 +8,19 @@ import PostAddForm from '../post-add-form';
 import './app.css'
 
 const App = () => {
-    return(
-   <div className="app">
-        <AppHeader/>
+    return (
+        <div className="app">
+            <AppHeader />
             <div className="search-panel">
-                <SearchPanel/>
-                <PostStatusFilter/>
+                <SearchPanel />
+                <PostStatusFilter />
             </div>
-            <PostList/>
-            <PostAddForm/>
-   </div>
+            <PostAddForm />
+            <PostList />
+            
+        </div>
     )
 }
 
 export default App
+

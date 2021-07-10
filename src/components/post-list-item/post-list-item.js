@@ -1,20 +1,20 @@
 import React from 'react';
-import PostList from '../post-list/post-list';
+import './post-list-item.css';
 
-const PostListItem = () =>{
-    return(
+const PostListItem = () => {
+    return (
         <li className="app-list-item">
             <span className="app-list-item-label">
-                Hello!
+                Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!Hello!
             </span>
-            <div>
-                <button type="button" className="btn-star">
-                    <i>*</i>
+            <div className="">
+                <button type="button" className="btn btn-small btn-star">
+                <span className="icon-star"></span>
                 </button>
-                <button type="button" className="btn-trash">
-                    <i>-</i>
+                <button type="button" className="btn btn-small btn-trash">
+                <span className="icon-trash"></span>
                 </button>
-                <i>Liked</i>
+                <span className="icon-heart"></span>
             </div>
         </li>
     )
