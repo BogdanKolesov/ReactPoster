@@ -4,8 +4,8 @@ import './post-status-filter.css';
 const PostStatusFilter = () => {
     return (
         <div className="btn-group">
-            <button className="btn btn--active">Все</button>
-            <button className="btn btn--passive">Понравилось</button>
+            <button type="button" className="btn btn--active">Все</button>
+            <button type="button"  className="btn btn--passive">Понравилось</button>
         </div>
     )
 }

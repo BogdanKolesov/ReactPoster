@@ -12,7 +12,16 @@
     text-align: center;
     color: #CCCCCC;
 }
+
+.icon-heart--red{
+    color: rgb(243, 0, 0);
+}
+
 .icon-star{
+    color: #CCCCCC;
+}
+
+.icon-star:hover{
     color: #CCCC33;
 }
 
@@ -38,4 +47,12 @@
     .app-list-item-label{
         max-width: 100%;
     }
+}
+
+.important .app-list-item-label{
+ border-bottom: 2px solid #CCCC33;
+}
+
+.important .icon-star{
+    color: #CCCC33;
 }
