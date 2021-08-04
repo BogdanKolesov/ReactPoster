@@ -1,40 +1,24 @@
-import React, { Component } from "react";
-import "./post-list-item.scss";
+import React, { Component } from 'react';
+import './post-list-item.scss';
 
 export default class PostListItem extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			important: false,
-			like: false,
-		};
-		this.onImportant = this.onImportant.bind(this);
-		this.onLike = this.onLike.bind(this);
-	}
-
-	onImportant() {
-		this.setState(({ important }) => ({
-			important: !important,
-		}));
-	}
-
-	onLike() {
-		this.setState(({ like }) => ({
-			like: !like,
-		}));
-	}
-
 	render() {
-		const { label, onDelete} = this.props;
-		const { important, like } = this.state;
-		let classNames = "app-list-item";
-		let classNamesHeart = "icon-heart";
+		const {
+			label,
+			onDelete,
+			onToggleImportant,
+			onToggleLiked,
+			important,
+			like,
+		} = this.props;
+		let classNames = 'app-list-item';
+		let classNamesHeart = 'icon-heart';
 		if (important) {
-			classNames += " important";
+			classNames += ' important';
 		}
 
 		if (like) {
-			classNamesHeart += " icon-heart--red";
+			classNamesHeart += ' icon-heart--red';
 		}
 		return (
 			<li className={classNames}>
@@ -43,7 +27,7 @@ export default class PostListItem extends Component {
 					<button
 						type='button'
 						className='btn btn-small btn-star'
-						onClick={this.onImportant}>
+						onClick={onToggleImportant}>
 						<span className='icon-star'></span>
 					</button>
 					<button
@@ -52,10 +36,9 @@ export default class PostListItem extends Component {
 						onClick={onDelete}>
 						<span className='icon-trash'></span>
 					</button>
-					<span className={classNamesHeart} onClick={this.onLike}></span>
+					<span className={classNamesHeart} onClick={onToggleLiked}></span>
 				</div>
 			</li>
 		);
 	}
 }
-
